@@ -36,11 +36,20 @@
       <script defer type="text/javascript" src="/main.js"></script>
     
       <div class="cardfooter">
-        <button class="btn1">hitung</button>
+        <button class="btn1" onclick="hitung()">hitung</button>
       </div>
     </div>
   </div>
   
+<script>
+  document.write("tes apakah bisa berfungsi");
+  function hitung(){
+  var pj = document.getElementById("PJ").value;
+  var lb = document.getElementById("LB").value;
+  var luas = pj*lb
+  console.log(luas)
+  }
+</script>
 </body>
 
 </html>
