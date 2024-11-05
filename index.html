@@ -31,6 +31,9 @@
           <label>Nilai Lebar</label>
           <input type="text" id="LB">
         </form>
+
+        <div class="hsl" id="hasil">hasil</div>
+        
       </div>
       <button onclick="console.log('hello');">Press me</button>
       <script defer type="text/javascript" src="/main.js"></script>
@@ -47,7 +50,16 @@
   var pj = document.getElementById("PJ").value;
   var lb = document.getElementById("LB").value;
   var luas = pj*lb
-  console.log(luas)
+  var res = "hitung Luas Persegi<br>Nilai Panjang "+pj+",dan lebarnya "+lb+" menjadi:<br>Luas = Panjang X lebar<br>Luas = "+pj+" X " + lb+"<br>Luas = "+luas
+  var pjlb = parseInt(pj) + parseInt(lb)
+  var kll = 2*pjlb
+  res += "<br><br>Keliling Persegi<br> keliling = 2 X (Panjang+Lebar)"
+  res += "<br>Keliling = 2 X (" +pj+ "+" +lb+ ")"
+  res +="<br>Keliling = 2 X "+pjlb
+  res +="<br>Keliling = "+ kll
+
+  document.getElementById("hasil").innerHTML=res
+  //console.log(res)
   }
 </script>
 </body>

@@ -1,3 +1,5 @@
+*{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
 body{
     background-color: blanchedalmond;
 }
@@ -58,4 +60,12 @@ input[type=text]{
 
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hsl{
+    font-size: 14px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: solid #f345 1px;
 }
