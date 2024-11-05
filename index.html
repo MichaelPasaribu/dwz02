@@ -12,30 +12,19 @@
   <h1 class="ter">tes</h1>
   <div class="tengah">
     <div class="card">
-      <h1>tes</h1>
+      <h1>hasil hitung</h1>
       <div class="cardbody">
-        <form method="get">
-          <input type="text" name="txNAME" id="txNAME" class="txNAME">
-          <input type="number">
-          <input type="date">
-          <input type="color">
-          <input type="password" name="pwd">
-          <input type="checkbox">pilih 1
-          <input type="radio">pilih 1 berupa radio
-          <input type="submit">
-          <input type="reset">
-          <input type="file" name="fgambar" id="fgambar" class="fgambar" accept="fgambar">
-
-          <label>Nilai Panjang</label>
+        <form>
+          <label>Nilai alas</label>
           <input type="text" id="PJ">
-          <label>Nilai Lebar</label>
+          <br>
+          <label>Nilai tinggi</label>
           <input type="text" id="LB">
         </form>
 
         <div class="hsl" id="hasil">hasil</div>
         
       </div>
-      <button onclick="console.log('hello');">Press me</button>
       <script defer type="text/javascript" src="/main.js"></script>
     
       <div class="cardfooter">
@@ -45,18 +34,21 @@
   </div>
   
 <script>
-  document.write("tes apakah bisa berfungsi");
+  document.write("stres ngoding eror mulu :(");
   function hitung(){
   var pj = document.getElementById("PJ").value;
   var lb = document.getElementById("LB").value;
-  var luas = pj*lb
-  var res = "hitung Luas Persegi<br>Nilai Panjang "+pj+",dan lebarnya "+lb+" menjadi:<br>Luas = Panjang X lebar<br>Luas = "+pj+" X " + lb+"<br>Luas = "+luas
-  var pjlb = parseInt(pj) + parseInt(lb)
-  var kll = 2*pjlb
-  res += "<br><br>Keliling Persegi<br> keliling = 2 X (Panjang+Lebar)"
-  res += "<br>Keliling = 2 X (" +pj+ "+" +lb+ ")"
-  res +="<br>Keliling = 2 X "+pjlb
-  res +="<br>Keliling = "+ kll
+  //var luas = pj*lb
+  //var res = "Hitung Luas Persegi<br>Nilai Panjang "+pj+",dan lebarnya "+lb+" menjadi:<br>Luas = Panjang X lebar<br>Luas = "+pj+" X " + lb+"<br>Luas = "+luas
+  //var pjlb = parseInt(pj) + parseInt(lb)
+  //var kll = 2*pjlb
+  //res += "<br><br>Keliling Persegi<br>keliling = 2 X (Panjang+Lebar)"
+  //res += "<br>Keliling = 2 X (" +pj+ "+" +lb+ ")"
+  //res +="<br>Keliling = 2 X "+pjlb
+  //res +="<br>Keliling = "+ kll
+
+  var luas = 0.5*pj*lb
+  var res = "Luas segitiga<br>1/2 X nilai alas "+pj+",dan nilai tinggi "+lb+" menjadi:<br>Luas = 1/2 X alas X tinggi<br>Luas = 1/2 X "+pj+" X "+lb+"<br>Luas = "+luas
 
   document.getElementById("hasil").innerHTML=res
   //console.log(res)
